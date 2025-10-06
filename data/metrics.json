@@ -1,0 +1,14 @@
+{
+  "as_of": "2025-10-04T00:00:00Z",
+  "metrics": {
+    "groups_connected": 128,
+    "total_packets_sent": 3456789,
+    "total_claimed_usdt": 91234.56
+  },
+  "groups": [
+    { "id": "g001", "name": "Moon Club A", "link": "https://t.me/joinchat/AAAA...", "members": 8540, "created_at": "2025-07-12T10:00:00Z" },
+    { "id": "g002", "name": "TON Builders", "link": "https://t.me/joinchat/BBBB...", "members": 12500, "created_at": "2025-08-03T09:00:00Z" },
+    { "id": "g003", "name": "Meme Rocket", "link": "https://t.me/joinchat/CCCC...", "members": 4321, "created_at": "2025-09-20T21:30:00Z" }
+  ]
+}
+

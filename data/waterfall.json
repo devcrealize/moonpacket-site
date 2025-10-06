@@ -1,0 +1,36 @@
+{
+  "as_of": "2025-10-04T00:00:00Z",
+  "items": [
+    { "id": "w001", "user": "Alice", "group": "Moon Club A", "amount": 12.3, "city": "Taipei", "ts": "2025-10-04T12:00:00Z" },
+    { "id": "w002", "user": "Bob", "group": "TON Builders", "amount": 5.5, "city": "Tokyo", "ts": "2025-10-04T12:00:20Z" },
+    { "id": "w003", "user": "Carol", "group": "Meme Rocket", "amount": 8.0, "city": "Seoul", "ts": "2025-10-04T12:00:40Z" },
+    { "id": "w004", "user": "Dave", "group": "Moon Club A", "amount": 3.4, "city": "HK", "ts": "2025-10-04T12:01:00Z" },
+    { "id": "w005", "user": "Erin", "group": "TON Builders", "amount": 1.9, "city": "Shanghai", "ts": "2025-10-04T12:01:20Z" },
+    { "id": "w006", "user": "Frank", "group": "Meme Rocket", "amount": 6.2, "city": "Shenzhen", "ts": "2025-10-04T12:01:40Z" },
+    { "id": "w007", "user": "Grace", "group": "Moon Club A", "amount": 7.7, "city": "Singapore", "ts": "2025-10-04T12:02:00Z" },
+    { "id": "w008", "user": "Heidi", "group": "TON Builders", "amount": 4.1, "city": "Kuala Lumpur", "ts": "2025-10-04T12:02:20Z" },
+    { "id": "w009", "user": "Ivan", "group": "Meme Rocket", "amount": 2.8, "city": "Bangkok", "ts": "2025-10-04T12:02:40Z" },
+    { "id": "w010", "user": "Judy", "group": "Moon Club A", "amount": 9.9, "city": "Jakarta", "ts": "2025-10-04T12:03:00Z" },
+    { "id": "w011", "user": "Ken", "group": "TON Builders", "amount": 5.0, "city": "Taipei", "ts": "2025-10-04T12:03:20Z" },
+    { "id": "w012", "user": "Lily", "group": "Meme Rocket", "amount": 11.2, "city": "Taipei", "ts": "2025-10-04T12:03:40Z" },
+    { "id": "w013", "user": "Ming", "group": "Moon Club A", "amount": 3.3, "city": "Taipei", "ts": "2025-10-04T12:04:00Z" },
+    { "id": "w014", "user": "Nina", "group": "TON Builders", "amount": 2.1, "city": "Taipei", "ts": "2025-10-04T12:04:20Z" },
+    { "id": "w015", "user": "Owen", "group": "Meme Rocket", "amount": 7.0, "city": "Kaohsiung", "ts": "2025-10-04T12:04:40Z" },
+    { "id": "w016", "user": "Paul", "group": "Moon Club A", "amount": 6.6, "city": "Tainan", "ts": "2025-10-04T12:05:00Z" },
+    { "id": "w017", "user": "Queenie", "group": "TON Builders", "amount": 8.8, "city": "Taichung", "ts": "2025-10-04T12:05:20Z" },
+    { "id": "w018", "user": "Ray", "group": "Meme Rocket", "amount": 4.7, "city": "Hsinchu", "ts": "2025-10-04T12:05:40Z" },
+    { "id": "w019", "user": "Sara", "group": "Moon Club A", "amount": 2.5, "city": "Taipei", "ts": "2025-10-04T12:06:00Z" },
+    { "id": "w020", "user": "Tom", "group": "TON Builders", "amount": 1.6, "city": "Taipei", "ts": "2025-10-04T12:06:20Z" },
+    { "id": "w021", "user": "Una", "group": "Meme Rocket", "amount": 3.2, "city": "Taipei", "ts": "2025-10-04T12:06:40Z" },
+    { "id": "w022", "user": "Vic", "group": "Moon Club A", "amount": 4.8, "city": "Taipei", "ts": "2025-10-04T12:07:00Z" },
+    { "id": "w023", "user": "Will", "group": "TON Builders", "amount": 2.2, "city": "Taipei", "ts": "2025-10-04T12:07:20Z" },
+    { "id": "w024", "user": "Xena", "group": "Meme Rocket", "amount": 10.0, "city": "Taipei", "ts": "2025-10-04T12:07:40Z" },
+    { "id": "w025", "user": "Yao", "group": "Moon Club A", "amount": 5.9, "city": "Taipei", "ts": "2025-10-04T12:08:00Z" },
+    { "id": "w026", "user": "Zack", "group": "TON Builders", "amount": 6.1, "city": "Taipei", "ts": "2025-10-04T12:08:20Z" },
+    { "id": "w027", "user": "Ada", "group": "Meme Rocket", "amount": 2.9, "city": "Taipei", "ts": "2025-10-04T12:08:40Z" },
+    { "id": "w028", "user": "Ben", "group": "Moon Club A", "amount": 3.1, "city": "Taipei", "ts": "2025-10-04T12:09:00Z" },
+    { "id": "w029", "user": "Chan", "group": "TON Builders", "amount": 7.4, "city": "Taipei", "ts": "2025-10-04T12:09:20Z" },
+    { "id": "w030", "user": "Ding", "group": "Meme Rocket", "amount": 1.3, "city": "Taipei", "ts": "2025-10-04T12:09:40Z" }
+  ]
+}
+

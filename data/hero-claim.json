@@ -1,0 +1,11 @@
+{
+  "marquee": [
+    "💰 John 在《Game Guild A》發出 100 USDT 紅包！",
+    "🎯 Lisa 領取了 3.5 USDT，手氣王！",
+    "🔥 群主 Ken 充值了 2000 USDT",
+    "📢 系統升級完成，新增 SOL 支持！",
+    "🥇 今日手氣最佳：@Mina（累積 28.3 USDT）"
+  ],
+  "groups_api": "/data/metrics.json"
+}
+
