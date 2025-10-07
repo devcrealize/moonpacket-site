@@ -1,0 +1,81 @@
+<!DOCTYPE html><html> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Redirecting…</title><meta id="i18n-config" data-json="{&#34;supported&#34;:[&#34;en-US&#34;,&#34;en-GB&#34;,&#34;zh-TW&#34;,&#34;zh-CN&#34;,&#34;ja-JP&#34;,&#34;ko-KR&#34;,&#34;de-DE&#34;,&#34;fr-FR&#34;,&#34;es-ES&#34;,&#34;it-IT&#34;,&#34;pt-BR&#34;,&#34;pt-PT&#34;,&#34;nl-NL&#34;,&#34;sv-SE&#34;,&#34;no-NO&#34;,&#34;da-DK&#34;,&#34;fi-FI&#34;,&#34;pl-PL&#34;,&#34;cs-CZ&#34;,&#34;tr-TR&#34;,&#34;vi-VN&#34;,&#34;th-TH&#34;,&#34;id-ID&#34;,&#34;hi-IN&#34;,&#34;bn-BD&#34;,&#34;ru-RU&#34;,&#34;uk-UA&#34;,&#34;ar-SA&#34;,&#34;fa-IR&#34;,&#34;he-IL&#34;,&#34;ur-PK&#34;,&#34;el-GR&#34;,&#34;ro-RO&#34;,&#34;hu-HU&#34;],&#34;base&#34;:&#34;/moonpacket-site/&#34;,&#34;defaultLocale&#34;:&#34;en-US&#34;}"><script>
+      // Inject config once from meta[data-json] to avoid any template parsing差异
+      (function(){
+        try {
+          var m = document.getElementById('i18n-config');
+          var raw = m && m.getAttribute('data-json');
+          window.__i18n = raw ? JSON.parse(raw) : {};
+        } catch (_) { window.__i18n = {}; }
+      })();
+      (function () {
+        try {
+          var url = new URL(location.href);
+          if (url.searchParams.has('noredirect') || url.searchParams.has('debug') || url.hash.indexOf('noredirect') !== -1 || url.hash.indexOf('debug') !== -1) {
+            console.log('[i18n redirect] disabled by query/hash', { href: location.href });
+            return;
+          }
+          var cfg = window.__i18n || {};
+          var supported = Array.isArray(cfg.supported) ? cfg.supported : [];
+          var base = cfg.base || '/';
+          var defaultLocale = cfg.defaultLocale || 'en-US';
+          function fromCookie(name){
+            try{
+              var m = document.cookie.match(new RegExp('(?:^|;\\s*)'+name+'=([^;]+)'));
+              return m && m[1] ? decodeURIComponent(m[1]) : null;
+            }catch(_){ return null }
+          }
+          function tryMatch(code) {
+            var lc = (code || '').toLowerCase();
+            for (var i = 0; i < supported.length; i++) {
+              if (supported[i].toLowerCase() === lc) return supported[i];
+            }
+            var primary = lc.split('-')[0];
+            for (var j = 0; j < supported.length; j++) {
+              if (supported[j].toLowerCase().split('-')[0] === primary) return supported[j];
+            }
+            return null;
+          }
+          // 1) 優先使用使用者最後選擇（localStorage/cookie）
+          var preferred = (function(){
+            try { var v = localStorage.getItem('mp_lang'); if (v) return v; } catch(_){ }
+            var c = fromCookie('mp_lang');
+            return c;
+          })();
+          var picked = null;
+          if (preferred) picked = tryMatch(preferred);
+          // 2) 其次依瀏覽器語言
+          if (!picked) {
+            var rawLangs = Array.isArray(navigator.languages) && navigator.languages.length
+            ? navigator.languages
+            : [navigator.language || navigator.userLanguage].filter(Boolean);
+            // 优先尝试非英文语言，最后再尝试英文，避免英文抢先
+            var nonEn = rawLangs.filter(function(l){ return !/^en(\b|[-_])/i.test(l || ''); });
+            var enOnly = rawLangs.filter(function(l){ return /^en(\b|[-_])/i.test(l || ''); });
+            var langs = nonEn.length ? nonEn.concat(enOnly) : rawLangs;
+            for (var k = 0; k < langs.length; k++) {
+              var m2 = tryMatch(langs[k]);
+              if (m2) { picked = m2; break; }
+            }
+          }
+          if (!picked) picked = defaultLocale;
+          var target = (base || '/') + picked + '/';
+          target = target.replace(/\/+/, '/');
+          var absoluteTarget = new URL(target, location.origin).pathname;
+          console.log('[i18n redirect] evaluate', { cfg, rawLangs, langs, picked, target, absoluteTarget, pathname: location.pathname });
+          if (location.pathname !== absoluteTarget) {
+            location.replace(absoluteTarget);
+          }
+        } catch (e) {
+          var cfg2 = window.__i18n || {};
+          var base2 = cfg2.base || '/';
+          var def2 = cfg2.defaultLocale || 'en-US';
+          var fallback = (base2 || '/') + def2 + '/';
+          fallback = fallback.replace(/\/+/, '/');
+          var absoluteFallback = new URL(fallback, location.origin).pathname;
+          console.error('[i18n redirect] error', e, { cfg: cfg2, absoluteFallback });
+          if (location.pathname !== absoluteFallback) {
+            location.replace(absoluteFallback);
+          }
+        }
+      })();
+    </script><!-- 使用原本與 logo 一致的 favicon.ico（使用根路徑，避免語言子路徑影響） --><link rel="icon" href="/favicon.ico" sizes="any"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" href="/favicon-source.png"></head> <body> <noscript> <p>JavaScript 已禁用。请访问 <a href="/moonpacket-site/en-US/">/moonpacket-site/en-US/</a></p> </noscript> <!-- Removed duplicate body script to avoid re-execution and parsing issues --> </body></html>

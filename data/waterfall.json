@@ -1,0 +1,26 @@
+{
+  "as_of": "2025-10-04T00:00:00Z",
+  "items": [
+    { "id": "w001", "user": "Alice", "group": "Moon Club A", "amount": 12.3, "ccy": "USDT", "city": "Taipei", "ts": "2025-10-04T12:00:00Z", "total_amount": 123.45, "claimed_count": 45, "total_count": 100, "link": "https://t.me/mooncluba" },
+    { "id": "w002", "user": "Bob", "group": "TON Builders", "amount": 5.5, "ccy": "TON", "city": "Tokyo", "ts": "2025-10-04T12:00:20Z", "total_amount": 55.00, "claimed_count": 23, "total_count": 100, "link": "https://t.me/tonbuilders" },
+    { "id": "w003", "user": "Carol", "group": "Meme Rocket", "amount": 8.0, "ccy": "SOL", "city": "Seoul", "ts": "2025-10-04T12:00:40Z", "total_amount": 80.00, "claimed_count": 67, "total_count": 100, "link": "https://t.me/memerocket" },
+    { "id": "w004", "user": "Dave", "group": "Moon Club A", "amount": 3.4, "ccy": "ETH", "city": "HK", "ts": "2025-10-04T12:01:00Z", "total_amount": 34.00, "claimed_count": 12, "total_count": 100, "link": "https://t.me/mooncluba" },
+    { "id": "w005", "user": "Erin", "group": "TON Builders", "amount": 1.9, "ccy": "USDT", "city": "Shanghai", "ts": "2025-10-04T12:01:20Z", "total_amount": 19.00, "claimed_count": 89, "total_count": 100, "link": "https://t.me/tonbuilders" },
+    { "id": "w006", "user": "Frank", "group": "Meme Rocket", "amount": 6.2, "ccy": "TON", "city": "Shenzhen", "ts": "2025-10-04T12:01:40Z", "total_amount": 62.00, "claimed_count": 34, "total_count": 100, "link": "https://t.me/memerocket" },
+    { "id": "w007", "user": "Grace", "group": "Moon Club A", "amount": 7.7, "ccy": "SOL", "city": "Singapore", "ts": "2025-10-04T12:02:00Z", "total_amount": 77.00, "claimed_count": 56, "total_count": 100, "link": "https://t.me/mooncluba" },
+    { "id": "w008", "user": "Heidi", "group": "TON Builders", "amount": 4.1, "ccy": "ETH", "city": "Kuala Lumpur", "ts": "2025-10-04T12:02:20Z", "total_amount": 41.00, "claimed_count": 78, "total_count": 100, "link": "https://t.me/tonbuilders" },
+    { "id": "w009", "user": "Ivan", "group": "Meme Rocket", "amount": 2.8, "ccy": "USDT", "city": "Bangkok", "ts": "2025-10-04T12:02:40Z", "total_amount": 28.00, "claimed_count": 91, "total_count": 100, "link": "https://t.me/memerocket" },
+    { "id": "w010", "user": "Judy", "group": "Moon Club A", "amount": 9.9, "ccy": "TON", "city": "Jakarta", "ts": "2025-10-04T12:03:00Z", "total_amount": 99.00, "claimed_count": 15, "total_count": 100, "link": "https://t.me/mooncluba" },
+    { "id": "w011", "user": "Ken", "group": "TON Builders", "amount": 5.0, "ccy": "SOL", "city": "Taipei", "ts": "2025-10-04T12:03:20Z", "total_amount": 50.00, "claimed_count": 42, "total_count": 100, "link": "https://t.me/tonbuilders" },
+    { "id": "w012", "user": "Lily", "group": "Meme Rocket", "amount": 11.2, "ccy": "ETH", "city": "Taipei", "ts": "2025-10-04T12:03:40Z", "total_amount": 112.00, "claimed_count": 63, "total_count": 100, "link": "https://t.me/memerocket" },
+    { "id": "w013", "user": "Ming", "group": "Moon Club A", "amount": 3.3, "ccy": "USDT", "city": "Taipei", "ts": "2025-10-04T12:04:00Z", "total_amount": 33.00, "claimed_count": 27, "total_count": 100, "link": "https://t.me/mooncluba" },
+    { "id": "w014", "user": "Nina", "group": "TON Builders", "amount": 2.1, "ccy": "TON", "city": "Taipei", "ts": "2025-10-04T12:04:20Z", "total_amount": 21.00, "claimed_count": 85, "total_count": 100, "link": "https://t.me/tonbuilders" },
+    { "id": "w015", "user": "Owen", "group": "Meme Rocket", "amount": 7.0, "ccy": "SOL", "city": "Kaohsiung", "ts": "2025-10-04T12:04:40Z", "total_amount": 70.00, "claimed_count": 38, "total_count": 100, "link": "https://t.me/memerocket" },
+    { "id": "w016", "user": "Paul", "group": "Moon Club A", "amount": 6.6, "ccy": "ETH", "city": "Tainan", "ts": "2025-10-04T12:05:00Z", "total_amount": 66.00, "claimed_count": 74, "total_count": 100, "link": "https://t.me/mooncluba" },
+    { "id": "w017", "user": "Queenie", "group": "TON Builders", "amount": 8.8, "ccy": "USDT", "city": "Taichung", "ts": "2025-10-04T12:05:20Z", "total_amount": 88.00, "claimed_count": 19, "total_count": 100, "link": "https://t.me/tonbuilders" },
+    { "id": "w018", "user": "Ray", "group": "Meme Rocket", "amount": 4.7, "ccy": "TON", "city": "Hsinchu", "ts": "2025-10-04T12:05:40Z", "total_amount": 47.00, "claimed_count": 51, "total_count": 100, "link": "https://t.me/memerocket" },
+    { "id": "w019", "user": "Sara", "group": "Moon Club A", "amount": 2.5, "ccy": "SOL", "city": "Taipei", "ts": "2025-10-04T12:06:00Z", "total_amount": 25.00, "claimed_count": 96, "total_count": 100, "link": "https://t.me/mooncluba" },
+    { "id": "w020", "user": "Tom", "group": "TON Builders", "amount": 1.6, "ccy": "ETH", "city": "Taipei", "ts": "2025-10-04T12:06:20Z", "total_amount": 16.00, "claimed_count": 83, "total_count": 100, "link": "https://t.me/tonbuilders" }
+  ]
+}
+
