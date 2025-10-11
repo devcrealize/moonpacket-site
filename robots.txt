@@ -1,5 +1,8 @@
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: /sitemap.xml
+# Sitemap
+Sitemap: https://devcrealize.github.io/moonpacket-site/sitemap.xml
 
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
